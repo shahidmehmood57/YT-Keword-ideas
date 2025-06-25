@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from datetime import datetime, timedelta
 
-API_KEY = "AIzaSyDajBAxtXpvtZk5cOu2hLGnhoBlYWKceJo"
+API_KEY = "AIzaSyCOQc0TZ5nrpCET2hkX3IOvCJqOJDiLB7k"
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
 YOUTUBE_VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos"
 YOUTUBE_CHANNEL_URL = "https://www.googleapis.com/youtube/v3/channels"
@@ -40,7 +40,7 @@ if st.button("Fetch Data"):
                 "publishedAfter": start_date,
                 "maxResults": 10,
                 "order": "date",
-                "key":"AIzaSyDajBAxtXpvtZk5cOu2hLGnhoBlYWKceJo",
+                "key":"AIzaSyCOQc0TZ5nrpCET2hkX3IOvCJqOJDiLB7k",
             }
 
             search_response = requests.get(YOUTUBE_SEARCH_URL, params=search_params)
