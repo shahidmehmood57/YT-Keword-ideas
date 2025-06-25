@@ -40,7 +40,7 @@ if st.button("Fetch Data"):
                 "publishedAfter": start_date,
                 "maxResults": 10,
                 "order": "date",
-                "key":"AIzaSyCOQc0TZ5nrpCET2hkX3IOvCJqOJDiLB7k",
+                "key":"API_KEY",
             }
 
             search_response = requests.get(YOUTUBE_SEARCH_URL, params=search_params)
